@@ -1,0 +1,8 @@
+<div class="task" [class.completed]="todo.completed" id="test">
+    <p>{{todo.id}}. {{todo.text}}</p>
+    <div class="task__btns">
+        <button class="edit" routerLink="/task/{{todo.id}}">Edit</button>
+        <button class="complete" (click)="markAsComleted(index)">Toggle complete</button>
+        <button class="remove">Remove</button>
+    </div>
+</div>

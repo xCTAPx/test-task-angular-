@@ -1,0 +1,12 @@
+<div class="wrap">
+    <ul class="tasks-list">
+        <li *ngFor="let todo of todos" class="tasks-list__item" [class.completed]="todo.completed">{{todo.id}}.
+            {{todo.text}}</li>
+    </ul>
+    <div class="new-task">
+        <h1>Tasks Editor</h1>
+        <h2>Create new task</h2>
+        <input type="text" placeholder="Enter your new task" #newTaskText>
+        <button (click)="addTask(newTaskText.value)" routerLink="/tasks" class="add-button">Add New Task</button>
+    </div>
+</div>

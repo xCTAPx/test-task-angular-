@@ -1,0 +1,25 @@
+.container {
+    width: 85%;
+    margin: 50px auto;
+}
+
+.add-task-button {
+    display: block;
+    margin: 20px auto;
+    height: 30px;
+    width: 100px;
+    background: rgb(206, 89, 11);
+
+    color: rgb(229, 233, 17);
+    font-weight: bold;
+
+    border: none;
+    border-radius: 15px;
+    outline: none;
+    
+    &:hover {
+        cursor: pointer;
+        background: rgb(235, 97, 5);
+        color: rgb(251, 255, 0);
+    }
+}

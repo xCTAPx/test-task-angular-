@@ -1,0 +1,12 @@
+<div class="wrap">
+    <ul class="tasks-list">
+        <li *ngFor="let todo of todos" class="tasks-list__item" [class.completed]="todo.completed">{{todo.id}}.
+            {{todo.text}}</li>
+    </ul>
+    <div class="edited-task">
+        <h1>Tasks Editor</h1>
+        <h2>Edit task #{{todos[currentId - 1].id}}</h2>
+        <input type="text" [(ngModel)]="todos[currentId - 1].text" #editedTaskText>
+        <button routerLink="/tasks" (click)="checkValue(currentId - 1)" class="edit-button">Edit task</button>
+    </div>
+</div>

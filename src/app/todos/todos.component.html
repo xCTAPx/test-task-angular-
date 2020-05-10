@@ -1,0 +1,5 @@
+<div class="container">
+    <button class="add-task-button" routerLink="/tasks/new">NEW TASK</button>
+    <app-task *ngFor="let todo of todos; let i = index" [index]="i" (click)="removeTask($event, i)" [todo]="todo">
+    </app-task>
+</div>

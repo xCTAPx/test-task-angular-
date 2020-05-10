@@ -1,0 +1,55 @@
+p {
+    font-family: Comforta;
+}
+
+.task {
+    width: 80%;
+    margin: 20px auto;
+    padding-left: 20px;
+
+    border: 2px dashed rgb(92, 90, 90);
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.task__btns {
+    margin: 15px 10px 0 0;
+
+    .edit {
+        background: rgb(64, 64, 182);
+        &:hover {
+            background: rgb(21, 5, 236);
+        }
+    }
+    .remove {
+        background: rgb(161, 15, 15);
+        &:hover {
+            background: rgb(241, 4, 4);
+        }
+    }
+    .complete {
+        background: rgb(3, 153, 3);
+        &:hover {
+            background: rgb(4, 231, 4);
+        }
+    }
+    button {
+        color: rgb(255, 255, 255);
+
+        margin-right: 2px;
+        height: 25px;
+
+        border: none;
+        border-radius: 3px;
+        outline: none;
+
+        cursor: pointer;
+    }
+}
+
+.completed {
+    color: rgb(148, 113, 113);
+    border-color: rgb(29, 187, 29);
+    background-color: rgba(47, 134, 47, 0.5);
+}
